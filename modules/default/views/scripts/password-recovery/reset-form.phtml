@@ -1,0 +1,24 @@
+<div class="title prepend-top">Установка нового пароля</div>
+<?php if (!empty($this->message)):?>
+    <div class="error text-center"><?=$this->message?></div>
+<?php endif;?>
+<div class="login-form-wrap layout-center">
+    <form class="login" method="post" action="/default/password-recovery/reset-form">
+    <del><input type="hidden" value="1" name="do" /></del>
+    <del><input type="hidden" value="<?=$this->id?>" name="id" /></del>
+    <del><input type="hidden" value="<?=$this->account_id?>" name="account_id" /></del>
+        <div>
+            <div>
+                <label for="password">Новый пароль</label>
+                <input type="password" name="password" id="password" value="" />
+            </div>
+            <div>
+                <label for="repassword">Повторите пароль</label>
+                <input type="password" name="repassword" id="repassword" value="" />
+            </div>
+            <div>
+                <input type="submit" value="Далее" />
+            </div>
+        </div>
+    </form>
+</div>

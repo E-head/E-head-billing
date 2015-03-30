@@ -1,0 +1,8 @@
+<div class="title">Пополнение счета с помощью перевода на банковский счёт</div>
+<form action="/customer/bills/bank-bill" method="POST" target="_new">
+<label for="payer_name">Плательщик:</label>
+<input type="text" name="payer_name" id="payer_name" style="width: 400px;" value="<?=$this->payer_name;?>">
+<label for="summ">Сумма:</label>
+<input type="text" name="summ" id="summ" style="width: 100px;" value="<?=$this->summ;?>">&nbsp;руб.
+<input type="submit" value="выписать счёт">
+</form>

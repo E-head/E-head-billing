@@ -1,0 +1,533 @@
+body {
+    background: #1b5174;
+    font-family: Verdana, Lucida Sans; /* ��������� */
+    min-width: 1000px;
+}
+a {
+    outline: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background: #4788b2;
+}
+.header {
+    height: 193px;
+    position: relative;
+}
+.header .bottom-shadow {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.logo {
+    
+}
+.top-menu-wrap {
+    float: right;
+    margin-top: -110px;
+    width: 950px;
+}
+
+/* top small menu start */
+.small-menu {
+    text-align: right;
+}
+.small-menu a {
+    color: #000;
+    padding: 0 1em;
+    text-decoration: underline;
+}
+.small-menu a:hover {
+    text-decoration: underline;
+}
+.small-menu .enter {
+    background: url(../images/user.png) no-repeat 0 50%;
+}
+.small-menu .register {
+    background: url(../images/key.png) no-repeat 0 50%;
+}
+.small-menu .developer {
+    background: url(../images/dev.png) no-repeat 0 50%;
+}
+.small-menu .plugins {
+    background: url(../images/gear.png) no-repeat 0 50%;
+}
+.small-menu .home {
+    background: url(../images/home.png) no-repeat 0 50%;
+}
+.small-menu .support {
+    background: url(../images/support.png) no-repeat 0 50%;
+}
+.small-menu .help {
+    background: url(../images/help.png) no-repeat 0 50%;
+}
+.small-menu .small-logo {
+    background: url(../images/favicon.png) no-repeat 0 50%;
+}
+.small-menu .exit {
+    background: url(../images/exit.png) no-repeat 0 50%;
+}
+/* top small menu end */
+
+/* top main menu start */
+.main-menu-wrap, .main-menu-container {
+    position: relative;
+    text-align: center;
+}
+.main-menu-wrap {
+    overflow: hidden;
+}
+.main-menu-container {
+    float: left;
+    left: 50%;
+
+}
+.main-menu {
+    float: left;
+    left: -50%;
+    list-style: none;
+    max-width: 950px;
+    overflow: hidden;
+    position: relative;
+}
+.main-menu li {
+    background: url(../images/menu-grnd.png) repeat-x 0 0;
+    border-top: 1px solid #b8e1fb;
+    border-right: 1px solid #d8efff;
+    border-bottom: 1px solid #b8e1fb;
+    border-left: 1px solid #5f95b8;
+    width: 234px;
+    float: left;
+    line-height: 52px;
+    position: relative;
+    vertical-align: middle;
+}
+.main-menu .first {
+    border-left: 1px solid #b8e1fb;
+    border-radius: 13px 0 0 13px;
+    -moz-border-radius: 13px 0 0 13px;
+    -webkit-border-radius: 13px 0 0 13px;
+}
+.main-menu .last {
+    border-right: 1px solid #b8e1fb;
+    border-radius: 0 13px 13px 0;
+    -moz-border-radius: 0 13px 13px 0;
+    -webkit-border-radius: 0 13px 13px 0;
+}
+.main-menu .empty {
+    border: 0 none;
+    height: 54px;
+}
+.main-menu .center.empty {
+    width: 948px;
+    border-radius: 13px;
+    -moz-border-radius: 13px;
+    -webkit-border-radius: 13px;
+}
+.main-menu li:hover, .main-menu .active {
+    background: url(../images/active-item-grnd.png) repeat-x 0 0;
+}
+.main-menu li.empty:hover {
+    background: url(../images/menu-grnd.png) repeat-x 0 0;
+}
+.main-menu li a {
+    color: #084872;
+    display: block;
+    font-family: Tahoma;
+    font-size: 150%;
+    font-weight: 700;
+    padding: 0 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.main-menu li:hover a, .main-menu li.active a {
+    color: #000;
+}
+.main-menu li ul {
+    display: none;
+    position: relative;
+}
+.main-menu li:hover ul, .main-menu li a:hover ul {
+    display: block;
+}
+.cabinet {
+    float: right;
+    margin-top: 10px;
+}
+/* top main menu end */
+
+/* login form start */
+.login-form-wrap {
+    background: url(../images/login-form-bg.png) no-repeat 0 0;
+    height: 175px;
+    padding: 55px 40px 44px 185px;
+    width: 248px;
+}
+
+.login-form-wrap p {
+}
+form.login input[type=text],
+form.login input[type=password] {
+    margin: 0 0 5px;
+    padding: 5px;
+    width: 200px;
+}
+form.login input[type=submit] {
+    margin-top: 5px;
+    width: 212px;
+}
+form.login a {
+	color: black;
+    margin-top: 25px;
+}
+/* login form end */
+
+/* registration form start */
+form.registration select,
+form.registration input[type=text],
+form.registration input[type=text],
+form.registration input[type=password] {
+    margin: 0 0 5px;
+    padding: 5px;
+    width: 400px;
+}
+form.registration input[type=submit] {
+    margin-top: 5px;
+}
+form.registration select {
+    width: 410px;
+}
+
+/* registration form end */
+
+/* splash start*/
+.splash {
+    min-height: 470px;
+}
+.splash .text {
+    padding: 40px 460px 0 0;
+}
+.splash .notebook {
+    background: url(../images/notebook.png) no-repeat 100% 50%;
+    height: 375px;
+    right: -50px;
+    position: absolute;
+    top: 45px;
+    width: 470px;
+}
+.splash .notebook img {
+    left: 61px;
+    position: relative;
+    top: 21px;
+}
+.splash p {
+    color: #303131;
+    font-family: verdana;
+    font-size: 15px;
+    line-height: 21px;
+}
+.splash b, .splash big {
+    color: #1b5174;
+    text-transform: uppercase;
+    font-size: 115%;
+}
+.splash big {
+    font-weight: 700;
+}
+/* splash end*/
+
+/* main conten start */
+.main-content {
+    background: url(../images/blue-gradient.png) repeat-x 0 100%;
+    padding-bottom: 50px;
+}
+.blue-block {
+    background: url(../images/blue-gradient.png) repeat-x 0 100%;
+}
+.ehead-folder, .ehead-advantage, .ehead-wallet {
+    height: 88px;
+    padding-left: 110px;
+}
+.ehead-folder {
+    background: url(../images/e-head-folder.png) no-repeat 0 0;
+}
+.ehead-advantage {
+    background: url(../images/advantages.png) no-repeat 0 0;
+}
+.ehead-wallet {
+    background: url(../images/wallet.png) no-repeat 0 0;
+}
+.ehead-rest {
+    color: #646767;
+    font-weight: 700;
+    text-transform: lowercase;
+}
+.ehead-first {
+    color: #007cc5;
+    font-weight: 700;
+    text-transform: lowercase;
+}
+
+/* 3 columns layout start */
+.col-wrap3 {
+    margin: 0 auto;
+    width: 33%;
+}
+.col-wrap3.delimiter {
+    background: url(../images/col-delim.gif) repeat-y 0 0;
+}
+.center-col {
+    width: 100%;
+}
+.center-col > .col-content {
+    padding: 0 40px;
+}
+.center-col > .col-header {
+    margin: 0 20px;
+}
+.center-col.delimiter {
+    background: url(../images/col-delim.gif) repeat-y 100% 0;
+}
+.left-col {
+    float: left;
+    margin-left: -100%;
+    width: 100%;
+}
+.left-col > .col-content {
+    padding-right: 40px;
+}
+.right-col {
+    float: right;
+    margin-right: -100%;
+    width: 100%;
+}
+.right-col > .col-header {
+    margin-left: 20px;
+}
+.right-col > .col-content {
+    padding-left: 40px;
+}
+/* 3 columns layout end */
+
+.contentheader, .contentheader-big {
+    color: #013f67;
+    font-size: 18pt;
+    line-height: 1.3em;
+    word-wrap: break-word;
+}
+.contentheader-big {
+    font-size: 20pt;
+    font-weight: 700;
+}
+
+/* article styles start */
+.aricle {}
+.article .title {
+	color: #1b5174;
+    border-bottom: 2px solid gray;
+    font: 700 180% tahoma;
+    padding-bottom: 2px;
+    margin-bottom: 1em; 
+}
+.article .content {}
+.article .content p {
+    margin-bottom: .2em;
+    text-align: justify;
+    text-indent: 1em;
+}
+.article .subtitle {
+    color:#1B5174;
+    font:700 120% tahoma;
+    margin:1.5em 0 1em;
+}
+/* article styles end */
+
+/* price start */
+.price td img {
+    margin: 10px 0 10px 32px;
+}
+.price .order img {
+    margin: 10px 0 0;
+}
+/* price end */
+
+.bullet-black {
+    background: url(../images/bullet-black.png) no-repeat 0 50%;
+}
+.security-grnd {
+    background: url(../images/security-grnd.jpg) no-repeat 100% 100%;
+}
+
+/* main conten end */
+
+/* about short start */
+.about-short {
+    padding-bottom: 1.5em;
+}
+.you-manager ul {
+    list-style: none;
+}
+.you-manager li em {
+    font-style: normal;
+    font-weight: 700; /* ��������� */
+    text-transform: uppercase;
+}
+.you-manager li {
+    background: url(../images/check.png) no-repeat 0 0;
+    padding: 0 0 8px 25px;
+}
+.reg-btn { /* CHANGE */
+    color: #7F7F7F;
+    display: block;
+    margin-top: 30px;
+}
+
+/* about short end */
+
+/* support start */
+.info {
+    background: url(../images/info-16.png) no-repeat 0 50%;
+}
+.faq {
+    background: url(../images/faq.png) no-repeat 0 50%;
+}
+.mail-box-grnd {
+    background: url(../images/mail-box.jpg) no-repeat 0 100%;
+    padding-left: 450px;
+}
+.support-form input[type=text] {
+    width: 400px;
+}
+.phones {
+    background: url(../images/call.png) no-repeat 0 10px;
+    border-top:1px solid #666;
+    min-height: 64px;
+    padding: 10px 0 0 74px;
+}
+.phones big {
+    font-size: 140%;
+}
+/* support end */
+
+/* footer start */
+.footer {
+    color: #fff;
+    min-height: 100px;
+    font-size: 1.1em;
+    width: 100%;
+}
+.footer .menu a {
+    color: #fff;
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+/* footer end */
+
+/* common start*/
+.gray-block {
+    background-color: #e2e6e8;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.top-shadow {
+    background: url(../images/top-shadow.png) repeat-x 0 100%;
+    height: 18px;
+}
+.bottom-shadow {
+    background: url(../images/bottom-shadow.png) repeat-x 0 100%;
+    height: 18px;
+}
+/* common end*/
+
+#terms-wrapper {
+	background: white;
+	border: 1px solid black;
+	padding: 20px;
+	overflow-y: scroll;
+    height: 150px;
+}
+.payment {
+    margin-top: 10px;
+}
+.payment a {
+    text-decoration: none;
+}
+
+.warning {
+	padding-left: 25px !important;
+    background: url(../images/dialog-warning.png) no-repeat 0 50%;
+}
+
+.seminar {
+    background: url('../images/seminar.jpg') no-repeat 0 0;
+    font: 400 14px tahoma;
+    height: 1060px;
+    margin: 15px auto;
+    padding-top: 127px;
+}
+.seminar  * {
+    color: #fff;
+    text-align: center;
+}
+.seminar  h2 {
+    font-weight: 700;
+    font-size: 150%;
+    font-style: italic;
+}
+.seminar  h1 {
+    color: #fdf598;
+    font-weight: 700;
+    font-size: 250%
+}
+.seminar  h3 {
+    margin-bottom: 0;
+}
+.seminar p {
+    line-height: 1.5em;
+}
+.seminar  .desc {
+    font-size: 1.25em;
+    padding: 0 80px;
+}
+.seminar .price,
+.seminar .price b {
+    color: #fdf598;
+    font-size: 1.15em;
+}
+.seminar form {
+    margin: 50px 0 0 465px;
+    text-align: left;
+}
+.seminar form > span {
+    color: #fdf598;
+}
+.seminar form .fields {
+    margin-bottom: 1em;
+    padding-right: 55px;
+}
+.seminar form label ,
+.seminar form input {
+    color: #444;
+    text-align: left;
+}
+.seminar form label {
+    display: block;
+    font-weight: 400;
+}
+.seminar form input {
+    margin: 3px 0 6px;
+    padding: .3em;
+}
+.seminar form input[type="submit"] {
+    float: right;
+}
+*:first-child+html .seminar form input[type="submit"] {
+    text-align: center;
+}
+.seminar form input[type="text"] {
+    width: 420px;
+}

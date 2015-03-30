@@ -1,0 +1,10 @@
+<div class="title">Пополнение счета с помощью Яндекс.Деньги</div>
+<form action="https://money.yandex.ru/eshop.xml" method="POST">
+<input type="hidden" name="ShopID" value="12222">
+<input type="hidden" name="scid" value="3024">
+<input type="hidden" name="CustomerNumber" value="<?=$this->id;?>">
+<input type="hidden" name="OrderDetails" value="Пополнение счёта e-head №<?=$this->id;?>">
+<label for="summ">Сумма:</label>
+<input type="text" name="Sum" id="summ" value="<?=$this->summ;?>">&nbsp;руб.
+<input type="submit" value="Платить через Яндекс.Деньги">
+</form>

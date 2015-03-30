@@ -1,0 +1,49 @@
+<div class="main left-column info-table">
+<div class="title">Информация об аккаунте</div>
+<label>Аккаунт:</label>
+<?=$this->data['login']; ?>
+<br />
+<label>Владелец:</label>
+<?php if ($this->data['iscompany']): ?>
+    <?=$this->data['company_name']; ?>
+<?php else: ?>
+    <?=$this->data['name']; ?>
+<?php endif; ?>
+<br />
+<label>Тарифный план:</label>
+<?=$this->data['tariff_name']; ?>
+<br />
+<label>Баланс:</label>
+<?=$this->data['balance']; ?> руб.
+<br />
+<label>Состояние:</label>
+<?=$this->data['status_name']; ?>
+<br />
+<label>Активен до:</label>
+<?=$this->data['expire']; ?>
+</div>
+<div class="main right-column">
+<div class="title">Новости</div>
+<b>01.02.2011</b><br />
+<p>С 1-го февраля 2011 года введен в эксплуатацию первый бесплатный тариф "Старт". Вы можете выбрать тариф в разделе "<a href="<?=$this->link('customer', 'settings', '')?>">Настройки</a>"</p>
+<b>09.11.2010</b><br />
+<p>Приглашаем на бесплатные бизнес-семинары "Эффективное управление проектами". Запись по телефону (495) 649-62-15</p>
+</div>
+<br / ><br / >
+<div class="prepend-top" style="line-height: 1em; text-align: center;">
+    <a class="contentheader" style="color: black;" href="http://demo.e-head.ru/">Демоверсия</a><br />
+    <span style="font-size: 8pt; font-weight: normal; color: grey;">
+        (логин и пароль такие же как в личном кабинете)
+    </span>
+</div>
+
+<!--
+<?php
+/*
+echo '<pre>';
+var_dump($this->data);
+print_r($this->errors);
+echo '</pre>';
+*/
+?>
+-->

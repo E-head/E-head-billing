@@ -1,0 +1,7 @@
+<fieldset><legend><b>Открытые задачи</b></legend>
+
+
+</fieldset>
+<fieldset><legend><b>Выполнено</b></legend>
+
+</fieldset>

@@ -1,0 +1,89 @@
+<?php $page = isset($this->page) ? $this->page : ''; ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>Личный кабинет e-head</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <!-- Framework CSS -->
+        <link rel="stylesheet" href="http://e-head.ru/css/screen.css" type="text/css" media="screen, projection" />
+        <link rel="stylesheet" href="http://e-head.ru/css/print.css" type="text/css" media="print" />
+
+        <link rel="stylesheet" href="http://e-head.ru/css/main.css" type="text/css" media="screen, projection"  />
+
+        <!--[if IE]>
+            <link rel="stylesheet" href="http://e-head.ru/css/ie-all.css" type="text/css" media="screen, projection" />
+        <![endif]-->
+
+        <!--[if lt IE 8]>
+            <link rel="stylesheet" href="http://e-head.ru/css/ie.css" type="text/css" media="screen, projection" />
+        <![endif]-->
+
+        <link rel="stylesheet" href="http://e-head.ru/css/toolbox.css" type="text/css" media="screen, projection"  />
+
+        <link rel="stylesheet" href="/css/cabinet.css" type="text/css" media="screen, projection"  />
+
+        <link href="/images/favicon.png" rel="icon" type="image/png" />
+        <link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    </head>
+    <body>
+        <!-- start header -->
+        <div class="header">
+            <div class="container clearfix">
+                <a href="http://e-head.ru/"><img width="370" alt="e-head logo" src="/images/logo.jpg" class="pull-3"></a>
+                <img class="cabinet" src="/images/personal-cabinet.png" height="54px" width="170px" alt=""/>
+                <div class="top-menu-wrap">
+                    <div class="small-menu append-bottom">
+                        <a href="http://e-head.ru/" title="Переход на главную страницу" class="icon home">Главная</a>
+                        <?php if (!empty($this->data['site'])):?>
+                            <a href="<?=$this->data['site']?>" class="icon small-logo"
+                                title="Войти в виртуальный менеджер e-head">
+                                Виртуальный менеджер e-head
+                            </a>
+                        <?php endif; ?>
+                        <!-- <a href="http://e-head.ru/index.php/home/offices" title="Как нас найти" class="icon home">Офисы</a> -->
+                        <a class="icon support" title="Задать вопрос" href="http://e-head.ru/index.php/home/podderzhka">Поддержка</a>
+                        <a class="icon exit" href="/default/index/logout" title="Выйти из личного кабинета">Выход</a>
+                    </div>
+                    <div class="main-menu-wrap container">
+                        <div class="main-menu-container">
+                            <ul class="main-menu">
+                                <li class="first<?php if ($page == 'profile'):?> active<?php endif;?>">
+                                    <a href="/" title="Профиль">Профиль</a>
+                                </li>
+                                <li<?php if ($page == 'bills'):?> class="active"<?php endif;?>>
+                                    <a href="/customer/bills" title="Пополнить счёт">Пополнить счёт</a>
+                                </li>
+                                <li<?php if ($page == 'documents'):?> class="active"<?php endif;?>>
+                                    <a href="/customer/documents" title="Документы">Документы</a>
+                                </li>
+                                <li class="last<?php if ($page == 'settings'):?> active<?php endif;?>">
+                                    <a href="/customer/settings" title="Настройки">Настройки</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-shadow on-top">&nbsp;</div>
+        </div>
+        <!-- end header -->
+        <div class="gray-block">
+            <div class="top-shadow on-top">&nbsp;</div>
+            <div class="container clearfix article prepend-top append-bottom">
+                <?php echo $this->layout()->content; ?>
+            </div>
+            <div class="append-bottom">&nbsp;</div>
+        </div>
+        <div class="footer">
+            <div class="top-shadow on-top"></div>
+            <div class="menu text-center prepend-top">
+                <a href="http://e-head.ru/index.php/home/bezopasnost" title="Безопасность">Безопасность</a>|
+                <a href="http://e-head.ru/index.php/home/bezopasnost/polozhenie-o-konfidentsialnosti" title="Положение о конфиденциальности">Конфиденциальность</a>|
+                <a href="http://e-head.ru/index.php/home/polzovatelskoe-soglashenie" title="Пользовательское соглашение">Пользовательское соглашение</a>|
+                <a href="http://e-head.ru/index.php/home/colaboration" title="Сотрудничество">Сотрудничество</a>|
+                <a href="http://e-head.ru/index.php/feedback" title="Отзывы">Отзывы</a>
+            </div>
+        </div>
+    </body>
+</html>

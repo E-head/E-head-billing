@@ -1,0 +1,9 @@
+<div class="title">Пополнение счета с помощью WebMoney</div>
+<form action="https://paymaster.ru/Payment/Init" method="POST">
+<input type="hidden" name="LMI_PAYMENT_DESC" value="<?=$this->id;?>">
+<input type="hidden" name="LMI_MERCHANT_ID" value="R163013484231">
+<input type="hidden" name="LMI_CURRENCY" value="643">
+<label for="summ">Сумма:</label>
+<input type="text" name="LMI_PAYMENT_AMOUNT" id="summ" value="<?=$this->summ;?>">&nbsp;руб.
+<input type="submit" value="оплатить WM">
+</form>

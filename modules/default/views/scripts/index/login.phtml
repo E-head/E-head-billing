@@ -1,0 +1,23 @@
+<div class="title prepend-top">Вход в личный кабинет</div>
+<?php if (!empty($this->message)):?>
+    <div class="error text-center"><?=$this->message?></div>
+<?php endif;?>
+<div class="login-form-wrap layout-center">
+    <form class="login" method="post" action="/default/index/login">
+    <del><input type="hidden" value="1" name="do" /></del>
+        <div>
+            <div>
+                <label for="login">Логин</label>
+                <input type="text" name="login" id="login" value="" />
+            </div>
+            <div>
+                <label for="password">Пароль</label>
+                <input type="password" name="password" id="password" value="" />
+            </div>
+            <div>
+                <input type="submit" value="Войти" />
+            </div>
+            <a href="/password-recovery/request-form" class="block text-right">Забыли пароль?</a>
+        </div>
+    </form>
+</div>

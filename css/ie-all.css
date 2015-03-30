@@ -1,0 +1,40 @@
+.main-menu li {
+    background: url(../images/menu-grnd-ie.png) no-repeat 50% 0;
+    border-top: none;
+    border-bottom: none;
+    line-height: 57px;
+}
+.main-menu li.first {
+    background: url(../images/menu-grnd-ie.png) no-repeat 0 0;
+    border: none;
+    border-right: 1px solid #d8efff;
+}
+.main-menu li.last {
+    background: url(../images/menu-grnd-ie.png) no-repeat 100% 0;
+    border: none;
+    border-left: 1px solid #5f95b8;
+}
+.main-menu li:hover,
+.main-menu li.active {
+    background: url(../images/menu-grnd-ie.png) no-repeat 50% -57px;
+}
+.main-menu li.first:hover,
+.main-menu li.first.active {
+    background: url(../images/menu-grnd-ie.png) no-repeat 0 -57px;
+}
+.main-menu li.last:hover,
+.main-menu li.last.active {
+    background: url(../images/menu-grnd-ie.png) no-repeat 100% -57px;
+}
+.main-menu .empty {
+    border: 0 none;
+}
+.main-menu .center.empty {
+    height: 57px;
+    width: 448px;
+}
+.main-menu .first.empty,
+.main-menu .last.empty {
+    height: 57px;
+    width: 250px;
+}

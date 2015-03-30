@@ -1,0 +1,21 @@
+<div class="title">Пополнение счета</div>
+Баланс: <?=$this->balance;?> руб.
+
+<div class="subtitle">Способы оплаты:</div>
+<a href="/customer/bills/bank-pay"><img height="55px" alt="Абсолют Банк" src="/images/payment/bank.png"></a>
+<a href="/customer/bills/qiwi-pay"><img height="55px" alt="Qiwi" src="/images/payment/qiwi.png"></a>
+<a href="/customer/bills/ym-pay"><img height="55px" alt="Яндекс.Деньги" src="/images/payment/yandex.png"></a>
+<br/>
+<i>(Оплата со счёта на счёт)</i>
+<br/><br/><br/>
+<script type='text/javascript' src='https://paymaster.ru/widget/Basic/1?LMI_MERCHANT_ID=R163013484231&LMI_PAYMENT_AMOUNT=100&LMI_PAYMENT_DESC=<?=$this->id;?>&LMI_CURRENCY=RUB'></script>
+
+<!--
+<?php
+/*
+echo '<pre>';
+var_dump($this);
+echo '</pre>';
+*/
+?>
+-->

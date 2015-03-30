@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>Личный кабинет e-head</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <!-- Framework CSS -->
+        <link rel="stylesheet" href="http://e-head.ru/css/screen.css" type="text/css" media="screen, projection" />
+        <link rel="stylesheet" href="http://e-head.ru/css/print.css" type="text/css" media="print" />
+
+        <link rel="stylesheet" href="http://e-head.ru/css/main.css" type="text/css" media="screen, projection"  />
+
+        <!--[if IE]>
+            <link rel="stylesheet" href="http://e-head.ru/css/ie-all.css" type="text/css" media="screen, projection" />
+        <![endif]-->
+
+        <!--[if lt IE 8]>
+            <link rel="stylesheet" href="http://e-head.ru/css/ie.css" type="text/css" media="screen, projection" />
+        <![endif]-->
+
+        <link rel="stylesheet" href="http://e-head.ru/css/toolbox.css" type="text/css" media="screen, projection"  />
+
+        <link href="/images/favicon.png" rel="icon" type="image/png" />
+        <link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    </head>
+    <body>
+        <!-- start header -->
+        <div class="header">
+            <div class="container clearfix">
+                <a href="http://e-head.ru/"><img width="370" alt="виртуальный менеджер e-head" src="/images/logo.jpg" class="pull-3" /></a>
+                <!-- <img class="cabinet" src="/images/personal-cabinet.png" height="54px" width="170px" alt=""/> -->
+                <div class="top-menu-wrap">
+                    <div class="small-menu append-bottom">
+                        <a href="http://e-head.ru/" title="Переход на главную страницу" class="icon home">Главная</a>
+                        <a href="http://billing.e-head.ru/" title="Войти в личный кабинет" class="icon enter">Вход в личный кабинет</a>
+                        <a href="http://e-head.ru/index.php/home/registration" title="Подать заявку на регистрацию" class="icon register">Регистрация</a>
+                        <!-- <a href="http://e-head.ru/index.php/home/offices" title="Как нас найти" class="icon home">Офисы</a> -->
+                        <a href="http://e-head.ru/index.php/home/podderzhka" title="Задать вопрос" class="icon support">Поддержка</a>
+                    </div>
+                    <div class="main-menu-wrap container">
+                        <div class="main-menu-container">
+                            <ul class="main-menu">
+		                        <li class="first">
+		                            <a href="http://e-head.ru/index.php/home/o-proekte" title="О проекте">О проекте</a>
+		                        </li>
+		                        <li>
+		                            <a href="http://e-head.ru/index.php/home/tarify" title="Тарифы">Тарифы</a>
+		                        </li>
+		                        <li>
+		                            <a href="http://e-head.ru/index.php/home/bezopasnost" title="Безопасность">Безопасность</a>
+		                        </li>
+		                        <li class="last">
+		                            <a href="http://e-head.ru/index.php/home/prezentatsii" title="Презентации">Презентации</a>
+		                        </li>
+		                    </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-shadow on-top">&nbsp;</div>
+        </div>
+        <!-- end header -->
+        <div class="gray-block">
+            <div class="top-shadow on-top">&nbsp;</div>
+            <div class="container clearfix article">
+                <?php echo $this->layout()->content; ?>
+            </div>
+            <div class="append-bottom">&nbsp;</div>
+        </div>
+        <div class="footer">
+	        <div class="top-shadow on-top"></div>
+	        <div class="menu text-center prepend-top">
+		        <a href="http://e-head.ru/index.php/home/bezopasnost" title="Безопасность">Безопасность</a>|
+		        <a href="http://e-head.ru/index.php/home/bezopasnost/polozhenie-o-konfidentsialnosti" title="Положение о конфиденциальности">Конфиденциальность</a>|
+		        <a href="http://e-head.ru/index.php/home/polzovatelskoe-soglashenie" title="Пользовательское соглашение">Пользовательское соглашение</a>|
+		        <a href="http://e-head.ru/index.php/home/colaboration" title="Сотрудничество">Сотрудничество</a>|
+		        <a href="http://e-head.ru/index.php/feedback" title="Отзывы">Отзывы</a>
+		    </div>
+	    </div>
+    </body>
+</html>

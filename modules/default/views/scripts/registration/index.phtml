@@ -1,0 +1,114 @@
+<div class="title">Форма регистрации</div>
+<?php if (!empty($this->errors)):?>
+    <div class="error">
+        <?php foreach($this->errors as $error):?>
+            <?=$error['id'] . ': ' . $error['msg'];?><br />
+        <?php endforeach;?>
+    </div>
+<?php endif;?>
+<form class="registration" method="post" action="">
+    <input type="hidden" id="" name="do" value="register"/>
+
+    <span style="display: inline-table; width: 500px;">
+        <input type="radio" id="" name="iscompany" value="0" checked="checked"
+            onclick="document.getElementById('company_fields').style.display='none'" />
+        <b>Физическое лицо</b>
+    </span>
+    <input type="radio" id="" name="iscompany" value="1"
+        <? if ($this->iscompany):?>checked="checked"<? endif;?>
+        onclick="document.getElementById('company_fields').style.display='inline-table'" />
+    <b>Юридическое лицо</b>
+    <br /><br /><hr><br />
+    <div style="display: inline-table; width: 500px;">
+        <label for="login">Логин:<span class="asterisk">*</span></label>
+        <br />
+        <input type="text" id="login" name="login" value="<?=$this->login;?>" />
+        <br />
+        <div class="warning"><small>
+            Определяет домен системы вида: <b>логин.e-head.ru</b>
+            <br />
+            Только строчные символы латинского алфавита, цифры и дефис
+        </small></div>
+        <br /><br />
+        <label for="password">Пароль:<span class="asterisk">*</span></label>
+        <br />
+        <input type="password" id="password" name="password"/>
+        <br />
+        <label for="password2">Пароль (повторно):<span class="asterisk">*</span></label>
+        <br />
+        <input type="password" id="password2" name="password2"/>
+        <br />
+        <small>Минимально 6 символов</small>
+        <br /><br /><br /><br />
+        <label for="name">ФИО контактного лица:<span class="asterisk">*</span></label>
+        <br />
+        <input type="text" id="name" name="name" value="<?=$this->name;?>"/>
+        <br /><br />
+        <label for="email">Контактный email:<span class="asterisk">*</span></label>
+        <br />
+        <input type="text" id="email" name="email" value="<?=$this->email;?>"/>
+        <br />
+        <div class="warning"><small>
+            Адрес, на который будут высылаться уведомления
+            <br />
+            и пароли для доступа к системе
+        </small></div>
+        <br /><br /><br />
+        <label for="phone">Контактный телефон:</label>
+        <br />
+        <input type="text" id="phone" name="phone" value="<?=$this->phone;?>"/>
+        <br /><br /><br />
+    </div>
+    <div id="company_fields" style="display:
+        <? if ($this->iscompany):?>inline-table<? else:?>none<? endif;?>;" >
+        <label for="company_name">Название организации:<span class="asterisk">*</span></label>
+        <br />
+        <input type="text" id="company_name" name="company_name" value="<?=$this->company_name;?>" />
+        <br />
+        <label for="company_address">Юридический адрес:<span class="asterisk">*</span></label>
+        <br />
+        <input type="text" id="company_address" name="company_address" value="<?=$this->company_address;?>" />
+        <br />
+        <label for="company_postaddress">Почтовый адрес:<span class="asterisk">*</span></label>
+        <br />
+        <input type="text" id="company_postaddress" name="company_postaddress" value="<?=$this->company_postaddress;?>" />
+        <br />
+        <label for="company_inn">ИНН:<span class="asterisk">*</span></label>
+        <br />
+        <input type="text" id="company_inn" name="company_inn" value="<?=$this->company_inn;?>" />
+        <br />
+        <label for="company_kpp">КПП:<span class="asterisk">*</span></label>
+        <br />
+        <input type="text" id="company_kpp" name="company_kpp" value="<?=$this->company_kpp;?>" />
+        <br />
+        <label for="company_rs">р/с:<span class="asterisk">*</span></label>
+        <br />
+        <input type="text" id="company_rs" name="company_rs" value="<?=$this->company_rs;?>" />
+        <br />
+        <label for="company_bank">Банк:<span class="asterisk">*</span></label>
+        <br />
+        <input type="text" id="company_bank" name="company_bank" value="<?=$this->company_bank;?>" />
+        <br />
+        <label for="company_ks">к/с:<span class="asterisk">*</span></label>
+        <br />
+        <input type="text" id="company_ks" name="company_ks" value="<?=$this->company_ks;?>" />
+        <br />
+        <label for="company_bik">БИК:<span class="asterisk">*</span></label>
+        <br />
+        <input type="text" id="company_bik" name="company_bik" value="<?=$this->company_bik;?>" />
+        <br />
+        <label for="company_ogrn">ОГРН:<span class="asterisk">*</span></label>
+        <br />
+        <input type="text" id="company_ogrn" name="company_ogrn" value="<?=$this->company_ogrn;?>" />
+        <br />
+        <label for="company_director">Генеральный директор:<span class="asterisk">*</span></label>
+        <br />
+        <input type="text" id="company_director" name="company_director" value="<?=$this->company_director;?>" />
+        <br />
+    </div>
+    <div class="text-right">
+        <input type="submit" value="Зарегистрировать" style="width: 250px; height: 40px;"/>
+    </div>
+    <hr>
+    <span class="asterisk">*</span> - поля обязательные к заполнению
+</form>

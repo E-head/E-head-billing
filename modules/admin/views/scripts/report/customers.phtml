@@ -1,0 +1,20 @@
+<h2 style="text-align: center;">Список клиентов</h2>
+<table cellspacing="0" cellpadding="5" border="1" width="100%"
+style="font: 400 10pt sans-serif; border-collapse: collapse;">
+<tr>
+    <th>№</th>
+    <th>Организация</th>
+    <th>ФИО контактного лица</th>
+    <th>Email</th>
+    <th>Телефон</th>
+</tr>
+<?php foreach($this->data as $i): ?>
+<tr>
+    <td><?=$i['id']; ?></td>
+    <td><?=$i['company_name']; ?></td>
+    <td><?=$i['name']; ?></td>
+    <td><?=$i['email']; ?></td>
+    <td><?=$i['phone']; ?></td>
+</tr>
+<?php endforeach; ?>
+</table>

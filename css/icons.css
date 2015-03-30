@@ -1,0 +1,18 @@
+.settings {
+    background-image:url(/images/folder_wrench.png) !important;
+}
+.user {
+    background-image:url(/images/user.png) !important;
+}
+.reply {
+    background-image:url(/images/user_comment.png) !important;
+}
+.delete {
+    background-image:url(/images/delete.gif) !important;
+}
+.add {
+    background-image:url(/images/add.gif) !important;
+}
+.edit {
+    background-image:url(/images/cog_edit.png) !important;
+}

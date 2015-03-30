@@ -1,0 +1,21 @@
+.main.left-column {
+    display: inline-table; 
+    width: 540px; 
+    padding-right: 100px;
+}
+.main.right-column {
+    display: inline-table; 
+    min-height: 300px;
+    width: 300px; 
+}
+.info-table label{
+    display: inline-table; 
+    width: 120px;
+    padding: 5px;
+}
+.info-table .positive {
+    color: green;
+}
+.info-table .negative {
+    color: red;
+}

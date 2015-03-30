@@ -1,0 +1,41 @@
+.on-top {
+    z-index: 999;
+}
+.icon {
+    min-height: 13px;
+    min-width: 13px;
+    padding-left: 20px !important;
+}
+.relative {
+    position: relative;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right !important;
+}
+.default-color {
+    color: #000 !important;
+}
+.asterisk {
+    color:red !important;
+    font-size: 80%;
+    font-weight:700 !important;
+    vertical-align: top;
+}
+.text-right {
+    text-align: right !important;
+}
+.default-color {
+    color: #000 !important;
+}
+.layout-center {
+    margin: 0 auto;
+}
+.block {
+    display: block;
+}
+.floatRight {
+    float: right;
+}

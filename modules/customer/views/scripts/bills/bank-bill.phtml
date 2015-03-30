@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 10.0pt;
+        }
+        div.wrapper {
+            width: 700px;
+            margin: 0  auto;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        td, th {
+            padding: 2px;
+            border: 1px solid;
+            font-weight: normal;
+        }
+        .sign {
+            background: url('/images/director_sign.png') no-repeat 180px 50%;
+            height: 40px;
+            padding-top: 40px;
+        }
+        .stamp {
+            background: url('/images/director_stamp.png') no-repeat 90% 90%;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper stamp">
+    <p><b><u>ООО "Полезные ресурсы"</u></b></p>
+    <p><b>Адрес: 143900, Московская область, Балашихинский район, г. Балашиха, мкр. 1 Мая, д.21</b></p>
+    <div style="text-align: center;"><b>Образец заполнения платежного поручения</b></div>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>ИНН 5001076523</td>
+            <td>КПП 500101001</td>
+            <td style="border-bottom: none;"></td>
+            <td style="border-bottom: none;"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="border-bottom: none;">Получатель</td>
+            <td style="border-bottom: none; border-top: none;"></td>
+            <td style="border-bottom: none; border-top: none;"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="border-top: none;">ООО "Полезные ресурсы"</td>
+            <td align="center" style="border-top: none;">Сч. №</td>
+            <td style="border-top: none;">40702810522000025369</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="border-bottom: none;">Банк получателя</td>
+            <td align="center">БИК</td>
+            <td style="border-bottom: none;">044525976</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="border-top: none;">АКБ "Абсолют Банк" (ЗАО) г. Москва</td>
+            <td align="center">Сч. №</td>
+            <td style="border-top: none;">30101810500000000976</td>
+        </tr>
+    </table>
+    <br /><br />
+    <div style="text-align: center; font-size:14.0pt;">
+        <b>СЧЁТ № <?=$this->bill_number; ?> от <?=$this->bill_date; ?> г.</b>
+    </div>
+    <br /><br />
+    <p>Плательщик: <?=$this->payer_name; ?></p>
+    <br /><br />
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <th>№</th>
+            <th>Наименование<br />товара</th>
+            <th>Единица<br />изме-<br />рения</th>
+            <th>Коли-<br />чество</th>
+            <th>Цена</th>
+            <th>Сумма</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Пополнение счёта e-head абонента № <?=$this->payer_id; ?></td>
+            <td align="center">&lt;&gt;</td>
+            <td align="center">1</td>
+            <td align="right"><?=$this->price; ?>,00</td>
+            <td align="right"><?=$this->price; ?>,00</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align: right; border: none;"><b>Итого:</b></td>
+            <td align="right"><b><?=$this->price; ?>,00</b></td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align: right; border: none;"><b>Без налога (НДС):</b></td>
+            <td align="right">-</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align: right; border: none;"><b>Всего к оплате:</b></td>
+            <td align="right"><b><?=$this->price; ?>,00</b></td>
+        </tr>
+    </table>
+    <p>Всего наименований 1, на сумму <?=$this->price; ?>,00<br /><b><?=$this->price_letter; ?> 00 копеек</b></p>
+    <div class="sign">Руководитель предприятия_____________________ (Ганжа А.Э.)</div>
+    <div class="sign">Главный бухгалтер____________________________ (Ганжа А.Э.)</div>
+</div>
+</body>
+</html>
+<?php // echo '<!-- <pre>'; var_dump($this); echo '</pre> -->'; ?>
